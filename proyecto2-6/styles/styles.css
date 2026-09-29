@@ -1,0 +1,261 @@
+/* ==========================================================================
+   1. VARIABLES Y CONFIGURACIÓN GLOBAL
+   ========================================================================== */
+:root {
+    /* Paleta de colores corporativa */
+    --primary-color: #0d6efd;
+    --primary-hover: #0b5ed7;
+    --primary-active: #0a58ca;
+    
+    --bg-main: #121212;
+    --bg-card: #1e1e1e;
+    --bg-card-hover: #252525;
+    
+    --text-primary: #f8f9fa;
+    --text-secondary: #adb5bd;
+    --border-color: #333333;
+    
+    --accent-color: #0d6efd;
+    --focus-ring: rgba(13, 110, 253, 0.5);
+}
+
+/* Base del cuerpo del sitio */
+body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+/* ==========================================================================
+   2. TRANSICIONES GLOBALES PARA ELEMENTOS INTERACTIVOS
+   ========================================================================== */
+a, 
+button, 
+.btn, 
+.nav-link, 
+.navbar-toggler,
+.card-section,
+.carousel-control-prev,
+.carousel-control-next,
+.form-control {
+    transition: all 0.3s ease-in-out;
+}
+
+/* ==========================================================================
+   3. ESTILOS DE NAVBAR (SOBREESCRIBIENDO BOOTSTRAP)
+   ========================================================================== */
+.navbar-custom {
+    background-color: var(--bg-card) !important;
+    border-bottom: 2px solid var(--accent-color);
+    padding: 0.8rem 1rem;
+}
+
+.navbar-custom .navbar-brand {
+    color: var(--text-primary) !important;
+    font-weight: 700;
+    font-size: 1.35rem;
+}
+
+.navbar-custom .nav-link {
+    color: var(--text-secondary) !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+}
+
+/* Pseudoclases para la navegación */
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .nav-link:hover {
+    color: var(--accent-color) !important;
+    transform: translateY(-2px);
+}
+
+.navbar-custom .navbar-brand:focus,
+.navbar-custom .nav-link:focus {
+    color: var(--text-primary) !important;
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+    box-shadow: none;
+}
+
+.navbar-custom .nav-link:active,
+.navbar-custom .nav-link.active {
+    color: var(--accent-color) !important;
+    font-weight: 700;
+}
+
+/* Botón Hamburguesa en Móvil */
+.navbar-toggler {
+    border-color: var(--border-color);
+}
+
+.navbar-toggler-icon {
+    filter: invert(1); /* Convierte el icono a color claro para fondos oscuros */
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.25rem var(--focus-ring);
+}
+
+/* ==========================================================================
+   4. TARJETAS Y CONTENEDORES (CARD SECTIONS)
+   ========================================================================== */
+.card-section {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+    color: var(--text-primary);
+}
+
+/* Interacción hover en tarjetas */
+.card-section:hover {
+    background-color: var(--bg-card-hover);
+    border-color: var(--accent-color);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(13, 110, 253, 0.2);
+}
+
+/* Listas internas en tarjetas */
+.list-grid {
+    list-style: none;
+    padding-left: 0;
+}
+
+.list-grid li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.list-grid li:last-child {
+    border-bottom: none;
+}
+
+/* ==========================================================================
+   5. COMPONENTES BOOTSTRAP PERSONALIZADOS
+   ========================================================================== */
+
+/* Botones */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--text-primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+    transform: scale(1.03);
+}
+
+.btn-primary:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.25rem var(--focus-ring);
+}
+
+.btn-primary:active {
+    background-color: var(--primary-active) !important;
+    border-color: var(--primary-active) !important;
+    transform: scale(0.97);
+}
+
+/* Carousel */
+.carousel-inner {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(4px);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 0.9;
+    transform: scale(1.1);
+}
+
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+    outline: 2px solid var(--accent-color);
+}
+
+/* ==========================================================================
+   6. FORMULARIO DE CONTACTO (contacto.html)
+   ========================================================================== */
+.max-width-form {
+    max-width: 700px;
+}
+
+.form-label {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.form-control {
+    background-color: var(--bg-main);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+}
+
+.form-control::placeholder {
+    color: var(--text-secondary);
+    opacity: 0.7;
+}
+
+.form-control:hover {
+    border-color: var(--accent-color);
+}
+
+.form-control:focus {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 0.25rem var(--focus-ring);
+    outline: none;
+}
+
+/* ==========================================================================
+   7. FOOTER Y ENLACES SECUNDARIOS
+   ========================================================================== */
+footer {
+    background-color: var(--bg-card);
+    border-top: 1px solid var(--border-color);
+    color: var(--text-secondary);
+}
+
+footer a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+}
+
+footer a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+footer a:focus {
+    outline: 2px solid var(--accent-color);
+    box-shadow: none;
+}
+
+footer a:active {
+    color: var(--primary-active);
+    opacity: 0.8;
+}

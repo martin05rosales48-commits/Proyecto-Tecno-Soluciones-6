@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - TecnoSoluciones</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Estilos Propios -->
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">TecnoSoluciones</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/sobre-mi.html">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/proyectos.html">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-4">
+        <div class="row g-4">
+            <!-- Hero -->
+            <section class="col-12 card-section area-hero">
+                <h1>Bienvenido a TecnoSoluciones</h1>
+                <p>Impulsamos la transformación digital de tu negocio mediante el desarrollo de software a medida, optimización de procesos y diseño web de alto impacto.</p>
+            </section>
+
+            <!-- Información General -->
+            <section class="col-md-6 card-section area-info">
+                <h2>Información General</h2>
+                <p>En TecnoSoluciones nos especializamos en crear soluciones tecnológicas eficientes, modernas y escalables. Acompañamos a pequeñas y medianas empresas en su adaptación al entorno digital con metodologías ágiles y código limpio.</p>
+            </section>
+
+            <!-- Servicios y Beneficios -->
+            <section class="col-md-6 card-section area-features">
+                <h2>Servicios y Beneficios</h2>
+                <p>Descubre lo que podemos hacer por tu proyecto:</p>
+                <ul class="list-grid">
+                    <li><strong>Desarrollo Web Personalizado:</strong> Sitios web accesibles, rápidos y adaptables a cualquier dispositivo.</li>
+                    <li><strong>Optimización de Rendimiento:</strong> Mejora de velocidad de carga y SEO técnico para destacar en buscadores.</li>
+                    <li><strong>Consultoría Tecnológica:</strong> Asesoramiento integral en elección de arquitectura y herramientas digitales.</li>
+                    <li><strong>Soporte Continuo:</strong> Mantenimiento y actualización constante para garantizar la seguridad de tu plataforma.</li>
+                </ul>
+            </section>
+
+            <!-- Sección de Galería con Carousel (Incluye imagen original) -->
+            <section class="col-12 card-section area-media">
+                <h2 class="mb-3">Infraestructura y Tecnología</h2>
+                <div id="carouselGaleria" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselGaleria" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselGaleria" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselGaleria" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <!-- Imagen original del proyecto en el primer slide -->
+                        <div class="carousel-item active">
+                            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80" class="d-block w-100" alt="Estación de trabajo moderna con código informático en pantalla">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Espacio de trabajo centrado en innovación</h5>
+                                <p>Enfocado en el desarrollo e innovación tecnológica constante.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" class="d-block w-100" alt="Trabajo en equipo en oficina tecnológica">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Trabajo Colaborativo</h5>
+                                <p>Acompañamos a tu empresa en cada etapa de la transformación digital.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" class="d-block w-100" alt="Pantalla mostrando código de programación fuente">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Código Limpio y Escalable</h5>
+                                <p>Soluciones construidas con los más altos estándares de calidad.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleria" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleria" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="text-center py-4 mt-auto">
+        <p class="mb-2">Todos los derechos reservados.</p>
+        <nav>
+            <ul class="list-inline m-0">
+                <li class="list-inline-item"><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li class="list-inline-item"><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li class="list-inline-item"><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

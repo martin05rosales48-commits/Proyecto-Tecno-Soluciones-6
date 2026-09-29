@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - TecnoSoluciones</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">TecnoSoluciones</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre-mi.html">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="proyectos.html">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-4 my-md-5">
+        <div class="row g-4 justify-content-center">
+            <section class="col-12 col-lg-7">
+                <div class="card p-4 shadow-sm border-0">
+                    <h1 class="h3 mb-3 fw-bold">Ponte en contacto</h1>
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre Completo</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="4" placeholder="¿En qué te podemos ayudar?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 w-md-auto">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </section>
+
+            <section class="col-12 col-lg-5">
+                <div class="bg-light p-4 rounded shadow-sm h-100">
+                    <h2 class="h4 mb-3 fw-bold">Información</h2>
+                    <p>Escríbenos directamente o visítanos en nuestras oficinas para coordinar una reunión.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><strong>Email:</strong> contacto@tecnosoluciones.com</li>
+                        <li class="mb-2"><strong>Teléfono:</strong> +54 11 1234-5678</li>
+                        <li class="mb-2"><strong>Ubicación:</strong> Buenos Aires, Argentina</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="text-center py-4 mt-auto bg-light border-top">
+        <p class="mb-2">Todos los derechos reservados.</p>
+        <nav>
+            <ul class="list-inline m-0">
+                <li class="list-inline-item"><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li class="list-inline-item"><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li class="list-inline-item"><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
